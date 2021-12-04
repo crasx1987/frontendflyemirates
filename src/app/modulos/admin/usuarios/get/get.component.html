@@ -15,13 +15,13 @@
    
       <tbody>
         <tr *ngFor="let p of listado">
-          <td>{{p.nombre}}</td>
+          <td>{{p.Id}}</td>
           <td>{{p.apellidos}}</td>
           <td>{{p.correo}}</td>
           <td>{{p.telefono}}</td>
           <td>
-            <a routerLink="/admin/edit/{{p.id}}" class="btn">Editar</a>
-            <button class="btn red" (click)="delete(p.id)">Eliminar</button>
+            <a routerLink="/admin/edit/{{p.Id}}" class="btn">Editar</a>
+            <button class="btn red" (click)="delete(p.Id)">Eliminar</button>
           </td>
         </tr>
       </tbody>

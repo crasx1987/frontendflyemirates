@@ -44,7 +44,7 @@ export class UsuarioService {
 //ACTUALIZAR USUARIO
 
     update(usuario: UsuarioModelo): Observable<UsuarioModelo> {
-      return this.http.patch<UsuarioModelo>(`${this.url}/usuarios/${usuario.id}`, {
+      return this.http.patch<UsuarioModelo>(`${this.url}/usuarios/${usuario.Id}`, {
         nombre: usuario.nombre,
         apellidos: usuario.apellidos,
         telefono: usuario.telefono,
